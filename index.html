@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bundle Cost</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<label for="Bundle">Choose a bundle:</label>
+
+	<select name="Bundle" id="Bundle">
+	  <option value="bundle1">Bundle 1</option>
+	  <option value="bundle2">Bundle 2</option>
+	  <option value="bundle3">Bundle 3</option>
+	  <option value="bundle4">Bundle 4</option>
+	  <option value="bundle5">Bundle 5</option>
+	</select>
+
+	<p> 
+        Selected Bundle is: 
+        <span class="output"></span> 
+    </p> 
+    <button onclick="getOption()"> 
+        Select Bundle
+    </button> <p></p>
+    <div class="Product">
+	    Product Name
+	    <input type="text" name="Product Name" class="pro">
+	    Cost
+	    <input type="text" name="Cost" class="cos">
+	    <button onclick="addEntity()"> 
+	        Add 
+	    </button>
+	    <button onclick="remEntity()"> 
+	        Remove Checked
+	    </button>
+	</div>
+	<p></p>
+	<table id="t01">
+	  <tr>
+	    <th>Product</th>
+	    <th>Cost</th> 
+	    <th></th> 
+	  </tr>
+	  </table>
+	  <p></p>
+	<div><h2>Total cost is: <span id="finCos">0</span></h4></div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
